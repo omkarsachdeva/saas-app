@@ -34,8 +34,6 @@ const CompanionsList = ({ title, companions, classNames }: CompanionsListProps) 
                 <TableBody>
                     {companions?.map(({id, subject, name, topic, duration}) => (
                         <TableRow key={id}>
-
-                         
                             <TableCell>
                                 <Link href={`/companions/${id}`}>
                                     <div className="flex items-center gap-2">
@@ -57,9 +55,6 @@ const CompanionsList = ({ title, companions, classNames }: CompanionsListProps) 
                                     </div>
                                 </Link>
                             </TableCell>
-
-                       
-
                             <TableCell>
                                 <div className="subject-badge w-fit max-md:hidden">
                                     {subject}
@@ -73,8 +68,6 @@ const CompanionsList = ({ title, companions, classNames }: CompanionsListProps) 
                             />
                                 </div>
                             </TableCell>
-
-                      
                             <TableCell>
                                 <div className="flex items-center gap-2 w-full justify-end">
                                     <p className="text-2xl">
